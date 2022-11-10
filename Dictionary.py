@@ -1,6 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
+import pyfiglet as figlet
 
+fig = figlet.figlet_format('Dictionary')
+
+print(fig, '''              ONLINE ENGLISH DICTIONARY ''' ,)
 def dictionary(word):
     page = requests.get( 'https://www.dictionary.com/browse/'+word)
     soup = BeautifulSoup(page.content, 'html.parser')
