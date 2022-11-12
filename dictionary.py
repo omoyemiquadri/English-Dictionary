@@ -1,7 +1,7 @@
 from lib.dictionary_class import Dict
-import pyfiglet as fg
+import pyfiglet as figlet
 
-label = fg.figlet_format("DICTIONARY")
+label = figlet.figlet_format("DICTIONARY")
 print(f"{label} \n\t\t ONLINE ENGLISH DICTIONARY.")
 
 obj = Dict()
